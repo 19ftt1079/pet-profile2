@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title  class="ion-text-center" id="font">Pet Information</ion-title>
+    <ion-buttons slot="start">
+      <ion-button id="back" routerLink>
+        <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div id="container" >
+  <form [formGroup]="newPetProfile" (ngSubmit)="confirm()">
+  <ion-grid>
+  <ion-row>
+    <ion-col class="ion-margin">
+
+        <ion-avatar class="center" id="images">
+          <img src="../assets/img/catprofile.png"/>
+        </ion-avatar>
+     <ion-button shape="clear" class="ion margin ion-text-center">
+       <input type="file" class="=upload"/>
+     </ion-button>
+
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-label >Pet Name</ion-label>
+      <ion-input type="text" placeholder="Your Pet Name" formControlName="petName" id="textarea"></ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+
+    <ion-item  id="gender">
+      <ion-label>Gender</ion-label>
+      <ion-select value="None" formControlName="gender">
+        <ion-select-option value="Male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item  id="breed">
+
+      <ion-label id="font">Breed</ion-label>
+      <ion-select value="Empty" formControlName="breed">
+        <ion-select-option value="Birman">Birman</ion-select-option>
+        <ion-select-option value="British Shorthair">Britsh Shorthair</ion-select-option>
+        <ion-select-option value="Maine Coon">Maine Coon</ion-select-option>
+         <ion-select-option value="Persian cat">Bombay</ion-select-option>
+         <ion-select-option value="Ragdoll">Ragdoll</ion-select-option>
+         <ion-select-option value="Sphynx Cat">Sphynx Cat</ion-select-option>
+      </ion-select>
+
+    </ion-item>
+
+  </ion-list>
+
+  <ion-row>
+    <ion-col>
+      <div>
+      <ion-label id= "font">Birthdate</ion-label>
+      <ion-datetime value="None" formControlName="petDate"  placeholder="Select Date"></ion-datetime>
+    </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-col>
+    <ion-row>
+      <div id="the-buttons">
+          <ion-button size="small" class="ion-text-capitalize" shape="round" type="confirm" color="primary">Save</ion-button>
+          <ion-button size="small" class="ion-text-capitalize"shape="round" color="secondary" >Cancel</ion-button>
+      </div>
+    </ion-row>
+  </ion-col>
+</ion-grid>
+</form>
+</div>
+</ion-content>

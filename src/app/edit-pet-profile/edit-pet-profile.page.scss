@@ -1,0 +1,58 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height:70%;
+}
+
+#the-buttons{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#font{
+  font-family: "AbeeZee" !important;
+  position: relative;
+  margin-right: 4.0vh;
+}
+
+ion-label{
+  font-family: "AbeeZee" !important;
+
+}
+
+ion-select{
+  border: solid 1px grey ;
+  border-radius: 1.0vh;
+  width: 5cm;
+
+
+}
+ion-input{
+  border: solid 1px grey ;
+  border-radius: 1.0vh;
+  height: 1.2cm;
+}
+
+#breed{
+ padding-bottom: 4vh;
+}
+
+ion-datetime{
+  border: solid 1px grey ;
+  border-radius: 1.0vh;
+  height: 1.2cm;
+
+}
+
+#the-buttons{
+  --ion-color-primary:#9DDFCC;
+  --ion-color-secondary: #FBE5E0;
+  font-size: 13px;
+}
+
+
+
+
